@@ -1,0 +1,99 @@
+/* Styles de base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+}
+header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Compétences */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills-list li {
+  background-color: #eee;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Projets */
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.project-card h3 {
+  margin-top: 0.5rem;
+}
+
+/* Formulaire contact */
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin-top: 1rem;
+}
+form input,
+form textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+form button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #f0f0f0;
+  color: #666;
+}
