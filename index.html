@@ -3,53 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mon Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    header {
-      background-color: #222;
-      color: white;
-      padding: 2rem;
-    }
-    section {
-      margin: 2rem auto;
-      max-width: 800px;
-    }
-    h1 {
-      font-size: 2rem;
-    }
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Portfolio — Adam Vasseur</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>Créé par Vasseur Adam</p>
+    <h1>Adam Vasseur</h1>
+    <p>Passionné par la vidéo et le montage.</p>
   </header>
-  <section>
+
+  <section id="about">
     <h2>À propos</h2>
-    <p>Je suis passionné(e) par [ta spécialité : design, code, photo, etc.].</p>
-
-    <h2>Mes projets</h2>
-    <ul>
-      <li>Projet 1 — Description rapide</li>
-      <li>Projet 2 — Description rapide</li>
-    </ul>
-
-    <h2>Contact</h2>
-    <p>Tu peux me contacter à <a href="mailto:tonemail@example.com">tonemail@example.com</a></p>
+    <p>
+      Je m'appelle Adam Vasseur, passionné par la vidéo et le montage depuis plusieurs années. Autodidacte, j’apprends en testant et perfectionnant mes compétences. J’aime raconter des histoires en images, donner du rythme à une séquence, faire ressortir l’émotion à travers le montage.
+    </p>
   </section>
+
+  <section id="skills">
+    <h2>Compétences</h2>
+    <ul class="skills-list">
+      <li>DaVinci Resolve</li>
+      <li>CapCut</li>
+      <li>Canva</li>
+      <li>Suite Office</li>
+      <li>Photoshop</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Mes projets</h2>
+    <div class="project-card">
+      <img src="images/instant-voyage.jpg" alt="Instant Voyage">
+      <h3>Instant Voyage</h3>
+      <!-- tu peux ajouter une description ou un lien -->
+    </div>
+    <div class="project-card">
+      <img src="images/neostudio.jpg" alt="NeoStudio">
+      <h3>NeoStudio</h3>
+    </div>
+    <div class="project-card">
+      <img src="images/sadra.jpg" alt="SADRA">
+      <h3>SADRA</h3>
+    </div>
+    <div class="project-card">
+      <img src="images/creations-personnelles.jpg" alt="Créations personnelles">
+      <h3>Créations personnelles</h3>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="mailto:tonemail@example.com" method="post" enctype="text/plain">
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" name="prenom" required />
+
+      <label for="nom">Nom de famille</label>
+      <input type="text" id="nom" name="nom" required />
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Adam Vasseur</p>
+  </footer>
 </body>
 </html>
